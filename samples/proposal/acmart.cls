@@ -1098,7 +1098,7 @@ Computing Machinery]
   \fi}
 %\acmConference[Conference'17]{ACM Conference}{July 2017}{Washington,
 %  DC, USA}
-\acmConference[Advanced Topics in Human-Computer Interaction]{Computer Science and Engineering}{2018/2019}{IST}
+\acmConference[Advanced Topics in Entertainment Systems]{Computer Science and Engineering}{2019/2020}{IST}
 \def\acmBooktitle#1{\gdef\@acmBooktitle{#1}}
 \acmBooktitle{Proceedings of \acmConference@name
        \ifx\acmConference@name\acmConference@shortname\else

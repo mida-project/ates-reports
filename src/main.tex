@@ -1,0 +1,43 @@
+\documentclass[sigchi, review]{acmart}
+
+\usepackage{booktabs} % For formal tables
+
+\graphicspath{{images/}}
+
+\begin{document}
+\title{Report Title}
+
+\author{FirstName LastName}
+\authornote{The FirstName LastName is the boss!}
+\orcid{1234-5678-9012}
+\affiliation{%
+  \institution{Instituto Superior T\'{e}cnico}
+  \city{Lisboa}
+  \state{Portugal}
+  \postcode{1049-001}
+}
+\email{firstname.lastname@tecnico.ulisboa.pt}
+
+% The default list of authors is too long for headers.
+\renewcommand{\shortauthors}{LastName et al.}
+
+
+\begin{abstract}
+This paper provides a sample of a \LaTeX\ document which conforms,
+somewhat loosely, to the formatting guidelines for
+ACM SIG Proceedings.
+\end{abstract}
+
+\begin{teaserfigure}
+  \includegraphics[width=\textwidth]{teaser}
+\end{teaserfigure}
+
+
+\maketitle
+
+\input{body}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{bibliography}
+
+\end{document}

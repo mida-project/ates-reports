@@ -1,0 +1,65 @@
+\documentclass[sigchi]{acmart}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{booktabs} 	% For formal tables
+\usepackage{listings}   % Writing code in latex document
+\usepackage{hyperref} 	% For hyperlinks
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=blue,      
+  urlcolor=blue,
+}
+
+\graphicspath{{images/}}
+
+\begin{document}
+\title{Report Readings: Article 6}
+\subtitle{AudioMoth: Acoustic Livestock Monitoring Proposal}
+
+\author{Francisco Maria Calisto}
+\orcid{0000-0001-8179-7872}
+\affiliation{%
+  \institution{Instituto Superior T\'{e}cnico}
+  \city{Lisboa}
+  \state{Portugal}
+  \postcode{1049-001}
+}
+\email{francisco.calisto@tecnico.ulisboa.pt}
+
+% The default list of authors is too long for headers.
+\renewcommand{\shortauthors}{Calisto}
+
+
+\begin{abstract}
+
+This report provides the reading analysis and debate of an \textit{Acoustic Livestock Monitoring Proposal} document supported by the \hyperlink{https://www.openacousticdevices.info/audiomoth}{AudioMoth} device.
+In context of this document, it was created for the \hyperlink{https://fenix.tecnico.ulisboa.pt/disciplinas/TAIP-M/2018-2019/1-semestre}{Advanced Topics in Human-Computer Interaction} course of the \hyperlink{https://fenix.tecnico.ulisboa.pt/cursos/deic/curriculo}{Computer Science and Engineering Doctoral Program} at \hyperlink{https://tecnico.ulisboa.pt/en/}{IST} of \hyperlink{https://www.ulisboa.pt/}{ULisboa} - \hyperlink{https://www.portugal.gov.pt/en/}{Portugal} (\hyperlink{https://europa.eu}{EU}).
+
+This document describes a proposal development and concept of an acoustic detector, namely called as \textit{AudioMoth}.
+It is briefly outlined several potential case studies of monitoring animal for livestock production.
+As an example, it is used the animal counting, illness or even giving birth, between others, as hypothetical application.
+With this proposal, it can be demonstrated the potential of \textit{AudioMoth} to enable substantial conversion from passive continuous recording by individual devices, towards smart detection by networks of devices, automatically addressing several animal characteristics.
+One characteristic, can be the communications between animals, taking into account the animal sound patterns of a livestock production.
+Since the fact that, in a period of time, each animal communicate at least one time.
+From here, an algorithm for logging animal sound events, has the potential to identify animal issues on a herd during that period of time.
+With this idea, livestock productions could benefit from an autonomous monitoring process of the animal herds.
+Observing animal patterns and managing animal issues.
+
+\end{abstract}
+
+\begin{teaserfigure}
+\includegraphics[width=\textwidth]{teaser}
+\end{teaserfigure}
+
+
+\maketitle
+
+\input{body}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{bibliography}
+
+\end{document}

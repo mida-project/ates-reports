@@ -1,10 +1,37 @@
 \section{Introduction}
 \label{sec:sec001}
 
-~\cite{https://doi.org/10.13140/rg.2.2.25412.68486, https://doi.org/10.13140/rg.2.2.33421.59360}
+Overstated expectations about AI assistant agents~\cite{https://doi.org/10.13140/rg.2.2.25412.68486, https://doi.org/10.13140/rg.2.2.33421.59360} and unknown levels of assertiveness decrease user acceptance and adoption of clinical systems, in particular when those expectations are not met~\cite{Inkpen:2019:HBG:3290607.3299002, Kocielnik:2019:YAI:3290605.3300641, Oh:2018:ILY:3173574.3174223}.
+The recent hype of Artificial Intelligence (AI) techniques brings a new paradigm in the context of Human-AI interaction.
+Modern {\it AI-Assisted} technologies, such as Deep Learning (DL) methods opens new possibilities in the clinical domain~\cite{topol2019high}, including:
+(i) genome interpretation~\cite{sundaram2018predicting};
+(ii) medical coaching via a smart speaker ({\it e.g.}, Alexa)~\cite{bickmore2018patient};
+(iii) assistive scan readings~\cite{madani2018deep};
+(iv) cancer diagnosis and identification of mutations~\cite{coudray2018classification}; and
+(v) mortality prediction~\cite{ahmad2018death}.
+Although, these methods exhibit good performance accuracy, most physicians do not expect their clinical systems to behave inconsistently and imperfectly~\cite{hoff2015trust, Kocielnik:2019:YAI:3290605.3300641}, these AI assistant agents are programmed to follow specific predefined report that often are equal for all clinicians.
+In most cases, assistants do not consider the clinician's professional years of medical experience.
 
-~\cite{https://doi.org/10.13140/rg.2.2.29816.70409}
+% ({\it i.e.}, Interns, Juniors, Middles and Seniors)
 
-~\cite{calisto2017mimbcdui}
+Having mechanisms to obtain and analyse clinicians' behaviour, can help researchers to create a more reliable AI assistant agent~\cite{Miao2019}.
+Concerning medical experience and clinical profile ({\it e.g.}, radiologists, surgeons, etc), we will analyse critical behaviour and implement persuasive mechanisms to reduce the rates of FPs and FNs.
+In particular, personalized persuasion strategies are more effective than non-personalized strategies in reporting the diagnostic or influencing the clinician to take the right decision~\cite{sonntag2016persuasive}.
+Thus, it will add great value for researchers in the development of AI assistant agents for the diagnostic via medical imaging.
 
-\break
+Recently, deep learning methods started outperforming traditional machine learning algorithms in many application domains, where the access to large amount of data and training {\it datasets} was feasible~\cite{calisto2017mimbcdui}.
+The work described here is one such example.
+Specifically, we introduce a  DL methodology in multi-modal ({\it Multi-Modal}) breast imaging\footnotemark[1] system~\cite{https://doi.org/10.13140/rg.2.2.29816.70409}.
+To this end, we developed {\it BreastScreening-AI}, a multimodal {\it AI-Assisted} medical imaging framework that allows radiologists to visualize and manipulate images, while also accessing a diagnostic recommendation from an {\it AI assistant}.
+The {\it BreastScreening} framework is used to test the usefulness of an intelligent medical that is integrated in an user interface. 
+We have collected a large breast imaging database. This database contains 338 multi-modal images cases. Specifically, it contains mammography, ultrasound and magnetic resonance imaging.
+Also, our database contains the manual delineation of the lesion ({\it i.e.}, ground-truth) along with the lesion severity, {\it i.e.}, Breast Imaging Reporting and Data System - BIRADS~\cite{ghosh2019artificial}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\footnotetext[1]{\scriptsize {\it Multi-Modality}: diagnostic technique for the patient treatment via: (1) MammoGraphy (MG), both CranioCaudal (CC) and MedioLateral Oblique (MLO) views; (2) UltraSound (US); (3) Magnetic Resonance Imaging (MRI); and (4) text. The considered text modalities are, for instance, report information, personal history, family history, age, among others. {\it BreastScreening}: stands for the general framework and the developed platform. {\it BreastScreening-AI}: stands for the integration of our {\it AI-Assisted} methods with a visual assistant agent, into the {\it BreastScreening} platform. The goal of the assistant is to interact with the user in two scenarios: (1) Assertive; and (2) Non-Assertive.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In this document, we present a proposal for applying {\it BreastScreening-AI} in two scenarios, where clinicians will interact with Assertive and Non-Assertive AI assistant agents~\cite{pacheco2019alignment, 10.1145/3311350.3347162}.
+The assistant will act as a second reader, providing results in terms of improvements on the classification diagnosis ({\it i.e.}, Over-Diagnosis {\it vs} Under-Diagnosis) regarding FPs and FNs, as well as efficiency and efficacy in the workflow.
+While considerable work as focused on improving the accuracy of AI algorithms, comparatively less work focused on improving adoption and usability of interactive assistance techniques.
+This proposal contributes broadly to our work by examining what clinicians need when using AI-powered image diagnostic, the practices they adopt while using diagnostic tools, and how these diagnostic tools affect end-user attitudes towards the underlying AI algorithms.

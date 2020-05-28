@@ -5,8 +5,32 @@ Medical imaging systems allow the end-user to diagnose several modalities\footno
 By bringing those modalities together, it offers new possibilities for quantitative imaging and diagnosis but also requires specialized data handling, post-processing and novel visualization methods~\cite{Igarashi:2016:IVS:2984511.2984537}.
 In the clinical domain, medical imaging tools can help experts make better decisions, {\it e.g.}, by identifying cancer prognostics among the available multi-modal data~\cite{Lopes:2017:UHC:3143820.3144118}.
 
-\cite{10.1145/3132272.3134111}
+In this document, we focus on understanding different aspects and expectations of a medical imaging Clinical Decision Support Systems (CDSS) integrated into the radiology workflow.
+In particular, our work demonstrates how an interactive AI assistant can directly address the above mentioned issues during medical imaging diagnosis.
+The following sections discuss recent advances on both CDSS and Human-AI Interaction approaches.
 
-\cite{calisto2020breastscreening}
+\subsection{Clinical Decision Support Systems}
+\label{sec:sec00201}
+
+Most of the best performing CDSS rely on Machine Learning (ML) algorithms that learn specific tasks from training data~\cite{calisto2020breastscreening}.
+The field recently gained enormous interest, mostly due to the practical successes of DL~\cite{10.1007/978-3-030-22871-2_67}.
+The rapid and widespread development of DL methods supports a wide range of image analysis tasks, including classification, detection, and segmentation \cite{lecun2015deep}.
+These methods rely on large annotated data sets to learn essential and discriminative image features for each specific task, with performances matching and even surpassing humans \cite{esteva2017dermatologist}.
+
+In medical applications, deep learning has also been the major contributor to the success of CDSS \cite{esteva2019guide}, \textit{e.g.}, on the diagnosis of skin cancer \cite{esteva2017dermatologist}, the segmentation of cardiac MRI \cite{8759179}, or breast cancer detection \cite{MAICAS2019101562}.
+Their outstanding performance in identifying meaningful patterns within the available data was recently used to help humans learn new biomarkers of specific diseases \cite{ wang2019deep}, suggesting these models can see beyond what a trained radiologist sees in medical images.
+
+\subsection{Human-AI Interaction}
+\label{sec:sec00202}
+
+Although the research in interaction with intelligent is recent~\cite{burr2018analysis}, still this topic has seen new advances {\it e.g.}, chat-bots and other agents~\cite{miller2019intrinsically}.
+Recent advances in medical technologies that promote the generation of data, have continued to drive interaction research in the clinical domain~\cite{azuaje2019artificial}.
+Moreover, the new interest of the medical community to support AI research projects and the available public {\it datasets}, are encouraging researchers to work on both fields~\cite{lau2018dataset}.
+
+Human-AI Interaction (HAII) incorporates human feedback in the model training process to create better ML models.
+The topic is also known as Interactive Machine Learning (iML)~\cite{10.1145/604045.604056} or Human-In-The-Loop (HITL)~\cite{holzinger2016interactive}.
+In this document, we refer to the topic as HAII, that somehow is addressed in~\cite{10.1145/3290605.3300233} providing a set of design guidelines~\cite{10.1145/3132272.3134111}.
+In~\cite{Kocielnik:2019:YAI:3290605.3300641} it is also addressed the study of the impact of several methods of expectation setting, and others studied the design for specific HAII scenarios~\cite{aha2017ai}.
+While much of the mentioned prior work has employed handcrafted features~\cite{10.1145/3290605.3300233, Kocielnik:2019:YAI:3290605.3300641}, we leverage the rich image data features automatically learned from DL algorithms.
 
 \break

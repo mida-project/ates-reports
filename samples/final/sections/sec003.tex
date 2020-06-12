@@ -1,0 +1,102 @@
+\section{Analysis}
+\label{sec:sec003}
+
+For this document, our goal is to propose a new study.
+The study will describe how displaying different levels of assertiveness can influence clinician's responses to agents.
+Moreover, we expect to understand the clinicians' behaviour during the decision-making process in a real-world setting.
+In this section, we propose the analysis of a study where we devise a mixed-design prototype in which we will manipulate the level of assertiveness displayed by the assistant.
+
+\subsection{Medical Procedures}
+\label{sec:sec00301}
+
+At this point, we will take impressions regarding the efficiency of clinicians, and their recommendations based on their experience for improvements of the patient examination.
+In fact, several studies demonstrated~\cite{waite2017tired} that radiologist fatigue levels and performance are related to environmental factors such as number of FPs and FNs.
+That said, we start analyzing the potential enhancement that an {\it AI-Assisted} diagnosis could take in the radiology room~\cite{chatelain2018evaluation, miglioretti2007radiologist}.
+
+\subsection{Insights and Challenges}
+\label{sec:sec00302}
+
+Our observations and interviews will align with previous research on clinician-driven diagnostic {\it tasks}~\cite{Sultanum:2018:MTP:3173574.3173996}.
+From the research insights we need to identify the following main challenges:
+i) the heterogeneous visualization mode of a large number of images and file sizes;
+ii) the annotation of medical images to support diagnosis and also 
+how the introduction of the {\it AI techniques} can improve the classification ground-truth for; and
+iii) when performing the classifications, the clinicians' gap in visualizing images from different modalities.
+
+\subsection{Design Goals}
+\label{sec:sec00303}
+
+As demonstrative example of implementing a diagnostic assistant in the design of medical imaging systems, we need to propose several design goals.
+The main design goals should be closely related to the research insights and the challenges of the previous section, namely:
+(1) a collection of a ground truth annotations, namely masses in all imaging modalities and calcification lesions in MG (for both CC and MLO views);
+(2) classification of the lesion severity using the BI-RADS~\cite{aghaei2018association};
+(3) categorization of the breast tissues (dense vs non-dense);
+(4) clinical co-variables, such as personal and family records; and
+(5) visualizations for clinical summary which is crucial for a proper diagnosis and to perform patient follow-up.
+
+\subsection{Design Methods}
+\label{sec:sec00304}
+
+For the future study, we will need to actively involve all clinicians in the design of this medical imaging solution.
+To generate clinician's empathy and involvement, design methods from participatory design will be considered~\cite{10.1145/3025453.3025873}.
+
+\break
+
+\noindent
+Our design methods should consist of three aspects:
+
+\begin{itemize}
+\begin{minipage}{0.3\linewidth}
+\item {\it insight}
+\end{minipage}
+\begin{minipage}{0.3\linewidth}
+\item {\it ideation}
+\end{minipage}
+\begin{minipage}{0.3\linewidth}
+\item {\it implementation}
+\end{minipage}
+\end{itemize}
+
+\hfill
+
+In analysis of clinicians' needs and requirements, we will focus on how the aforementioned aspects of our design methods are interpreted, achieved or disregarded by clinicians.
+For that, in the final report we will explain the details of each aspect concerning the proposed design methods.
+
+\subsection{Research Questions}
+\label{sec:sec00305}
+
+The accuracy level of a clinical system is defined as the total number of correct predictions over all possible predictions~\cite{seref2019performance}.
+This definition requires the use of the following error metrics:
+(1) FP; and
+(2) FN.
+Typically, FP and FN are used to quantify {\bf Precision} {\it vs} {\bf Recall}.
+In general, clinical systems are optimized for high precision and, therefore, avoid FPs ({\it i.e.}, in our context, avoid recommending a BI-RADS higher than the real one).
+
+Previous works outside of the clinical scope~\cite{Kocielnik:2019:YAI:3290605.3300641, Dove:2017:UDI:3025453.3025739}, denote that the impact of FP {\it vs.} FN on UX is generally unexplored.
+However, thus is of high relevance when considering AI systems for the clinical domain~\cite{boughey2016identification, dialani2015role} as it will be experimentally shown.
+
+We also want to measure that our \textit{AI-Assistant} as a function in two scenarios ({\it i.e.}, Assertive and Non-Assertive) of the above metrics.
+Measuring predictions are typically quantified as precision in contrast with recall.
+We, therefore, explore the following {\it Research Questions} and associated each to the set of {\it Hypothesis} following the guidelines described in~\cite{10.1145/3290605.3300233, Kocielnik:2019:YAI:3290605.3300641}.
+Specifically, we consider the following research questions and related hypothesis:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item {\bf RQ1.} Should the assistant agent interact with all clinicians in the same way?
+\begin{itemize}
+\item {\bf H1.1.} Less experienced clinicians are performing better with more assertive assistants.
+\item {\bf H1.2.} Higher experienced clinicians are performing better with low assertive assistants.
+\end{itemize}
+\item {\bf RQ2.} Will the assertiveness perception of the assistant agent improve UX?
+\begin{itemize}
+\item {\bf H2.1.} The UX of assertive assistant agent is better for less experienced clinicians.
+\item {\bf H2.2.} The UX of non-assertive assistant agent is better for higher experienced clinicians.
+\end{itemize}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The work in~\cite{10.1145/3290605.3300233}, describes a set of \underline{18 guidelines} for Human-AI Interaction (HAII) being highly useful to answer {\bf RQ2.} question.
+Also, in~\cite{Kocielnik:2019:YAI:3290605.3300641} it is provided  an exploratory study of an {\it AI-Assistant} to study the impact of several methods of expectation-setting, also answering {\bf RQ2.} question.
+In both studies, the authors show that different focus on avoiding types of errors lead to a quite different subjective perceptions ({\it i.e.}, the {\bf RQ1.} question) of accuracy and acceptance.
+
+\break

@@ -14,7 +14,7 @@ To validate the proposed DenseNet results, our framework allows the radiologist 
 Therefore, the clinician can freely control the final diagnosis result.
 The {\it BreastScreening} platform operates as a website that can be accessed via a web browser.
 
-\footnotetext[3]{\hyperlink{https://cornerstonejs.org/}{cornerstonejs.org} - a {\it JavaScript} library to display interactive medical images including but not limited to DICOM. It was used to display the medical images on the browser.}
+\footnotetext[2]{\hyperlink{https://cornerstonejs.org/}{cornerstonejs.org} - a {\it JavaScript} library to display interactive medical images including but not limited to DICOM. It was used to display the medical images on the browser.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h]
@@ -28,15 +28,15 @@ The {\it BreastScreening} platform operates as a website that can be accessed vi
 \subsection{Implementation}
 \label{sec:sec00402}
 
-{\it BreastScreening} framework will be implemented using {\it CornerstoneJS}\footnotemark[3]~\cite{urban2017lesiontracker} with a {\it NodeJS} framework\footnotemark[4]~\cite{10.5555/3002437, drnasin2017javascript} and {\it ExpressJS}\footnotemark[5]~\cite{10.1117/12.2285952} for managing the server part.
+{\it BreastScreening} framework will be implemented using {\it CornerstoneJS}\footnotemark[2]~\cite{urban2017lesiontracker} with a {\it NodeJS} framework\footnotemark[3]~\cite{10.5555/3002437, drnasin2017javascript} and {\it ExpressJS}\footnotemark[4]~\cite{10.1117/12.2285952} for managing the server part.
 To feed the system, we will select image sets from \hyperlink{https://hff.min-saude.pt/}{Hospital Fernando Fonseca} and upload them into an {\it Orthanc} server~\cite{Jodogne2018}.
 Three imaging modalities (MG, US and MRI) will be provided for each patient.
 The images will be pre-processed and anonymized on the {\it Orthanc} server and then consumed by the system.
 This system, needs to be efficiently designed as a set of modules (Figure~\ref{fig:fig008}) that can be reused in other imaging applications.
 
-\footnotetext[4]{\hyperlink{https://nodejs.org}{nodejs.org} - a {\it JavaScript (JS)} based framework for back-end implementation. {\it NodeJS} is defined as a {\it JS} code execution environment.}
+\footnotetext[3]{\hyperlink{https://nodejs.org}{nodejs.org} - a {\it JavaScript (JS)} based framework for back-end implementation. {\it NodeJS} is defined as a {\it JS} code execution environment.}
 
-\footnotetext[5]{\hyperlink{https://expressjs.com}{expressjs.com} - minimal and flexible {\it NodeJS} web application framework that provides a robust set of features. It deals with requests, responses and subsequent middleware functions.}
+\footnotetext[4]{\hyperlink{https://expressjs.com}{expressjs.com} - minimal and flexible {\it NodeJS} web application framework that provides a robust set of features. It deals with requests, responses and subsequent middleware functions.}
 
 \subsection{Study Setup}
 \label{sec:sec00403}

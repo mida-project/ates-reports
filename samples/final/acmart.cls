@@ -2149,11 +2149,11 @@ Computing Machinery]
   \fi}
 \def\@mkabstract{\bgroup
   \ifx\@abstract\@lempty\else
-  {\phantomsection\addcontentsline{toc}{section}{Summary}%
+  {\phantomsection\addcontentsline{toc}{section}{Executive Summary}%
     \if@ACM@journal
        \everypar{\setbox\z@\lastbox\everypar{}}\small
     \else
-      \section*{Summary}%
+      \section*{Executive Summary}%
     \fi
    \ignorespaces\@abstract\par}%
   \fi\egroup}
